@@ -69,8 +69,9 @@ void AVRScheduler::delay_microseconds(uint16_t us) {
 
 void AVRScheduler::delay(uint16_t ms)
 {
-	uint32_t start = _timer.micros();
+    uint32_t start = _timer.micros();
     
+    //Mirikle, possible performance optimization 
     while (ms > 0) {
         while ((_timer.micros() - start) >= 1000) {
             ms--;
