@@ -22,6 +22,8 @@ AVRUARTDriverInstance(avrUart1Driver, 1);
 AVRUARTDriverInstance(avrUart2Driver, 2);
 AVRUARTDriverInstance(avrUart3Driver, 3);
 
+// Mirikle, this is where all the main coponents gets assembled
+
 static AVRSemaphore     i2cSemaphore;
 static AVRI2CDriver     avrI2CDriver(&i2cSemaphore);
 static MPNGSPIDeviceManager mpngSPIDriver;
