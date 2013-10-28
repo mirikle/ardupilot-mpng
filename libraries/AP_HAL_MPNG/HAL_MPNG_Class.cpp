@@ -1,4 +1,3 @@
-
 #include <AP_HAL.h>
 
 /* To save linker space, we need to make sure the HAL_MPNG class
@@ -85,6 +84,7 @@ void HAL_MPNG::init(int argc, char * const argv[]) const {
     PORTJ |= _BV(0); // S3
 };
 
+// Mirikle, the global driver.
 const HAL_MPNG AP_HAL_MPNG;
 
 #endif // CONFIG_HAL_BOARD == HAL_BOARD_MPNG
