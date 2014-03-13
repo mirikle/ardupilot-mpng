@@ -130,6 +130,7 @@ enum ap_message {
     MSG_RAW_IMU2,
     MSG_RAW_IMU3,
     MSG_GPS_RAW,
+    MSG_SYSTEM_TIME,
     MSG_SERVO_OUT,
     MSG_NEXT_WAYPOINT,
     MSG_NEXT_PARAM,
@@ -267,7 +268,8 @@ enum log_messages {
 #define RCTIMER_CRIUS_V2 1
 #define CRIUS_V1 2
 #define HK_RED_MULTIWII_PRO 3
-#define BLACK_VORTEX 4 
+#define BLACK_VORTEX 4
+#define MULTIWII_PRO_EZ3_BLACK 5
 
 // altitude control algorithms
 enum {
