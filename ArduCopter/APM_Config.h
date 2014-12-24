@@ -11,6 +11,7 @@
   HK_RED_MULTIWII_PRO -- HobbyKing MultiWii Pro RED board with ITG3205 and BMA180, BMP085 sensors
   BLACK_VORTEX
   MULTIWII_PRO_EZ3_BLACK  -- ReadyToFlyQuads - MultiWii PRO Ez3.0 Blacked MAG Editon Flight Controller w/ GPS Option (NO COMPASS)
+  PARIS_V5_OSD            -- PARIS v5 Mega iOSD - http://www.multiwiicopter.com/products/multiwii-paris-v5-mega-iosd-gps-autopilot
  */
 
 // GPS port speed (Serial2) 38400 by default
@@ -46,7 +47,7 @@
 
 // uncomment the lines below to save on flash space if compiling for the APM using Arduino IDE.  Top items save the most flash space
 //#define CLI_ENABLED           DISABLED            // disable the CLI (command-line-interface) to save 21K of flash space
-#define LOGGING_ENABLED       DISABLED            // disable dataflash logging to save 11K of flash space
+//#define LOGGING_ENABLED       DISABLED            // disable dataflash logging to save 11K of flash space
 //#define GPS_PROTOCOL          GPS_PROTOCOL_UBLOX  // hard code GPS to Ublox to save 8k of flash
 //#define GPS_PROTOCOL          GPS_PROTOCOL_MTK19  // hard cdoe GPS to Mediatek to save 10k of flash
 //#define MOUNT                 DISABLED            // disable the camera gimbal to save 8K of flash space

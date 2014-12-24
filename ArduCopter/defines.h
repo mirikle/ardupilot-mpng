@@ -396,7 +396,11 @@ enum ap_message {
 #define RELAY_APM1_PIN 47
 #define RELAY_APM2_PIN 13
 
-#define PIEZO_PIN AN5           //Last pin on the back ADC connector
+#ifdef CONFIG_HAL_BOARD == HAL_BOARD_MPNG
+ #define PIEZO_PIN AN3
+#else
+ #define PIEZO_PIN AN5           //Last pin on the back ADC connector
+#endif
 
 // RADIANS
 #define RADX100 0.000174532925f
@@ -447,6 +451,7 @@ enum ap_message {
 #define BLACK_VORTEX 4
 #define COB_BOARD 5
 #define MULTIWII_PRO_EZ3_BLACK 5
+#define PARIS_V5_OSD 6
 
 
 // Error message sub systems and error codes

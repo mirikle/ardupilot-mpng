@@ -1,10 +1,7 @@
-Release Notes for MegaPirateNG 3.0.1 R2 (ArduPilot 3.0.1)
-
-IMPORTANT NOTICE!!!
-IT3200 gyro doesn't supported in this version!!! Only MPU6050 supported!
+Release Notes for MegaPirateNG 3.1 Beta (ArduPilot 3.1)
 
 === How to compile MegaPirateNG ===
-Follow instructions at: http://www.megapirateng.com/compile-mpng-sources/
+Follow instructions at: http://docs.megapirateng.com
 
 
 === Arduino board pin mapping ===
@@ -21,13 +18,17 @@ A2-A7
 A0 - Voltage
 A1 - Current
 
-
 *** Sonar ***
 Currently sonar is not supported
 
 *** Motor mapping ***
 Look motor mapping at: http://code.google.com/p/megapirateng/wiki/confighw?wl=en
-Version history
+
+*** Version history ***
+
+*** 3.1 Beta
+Initial version after upgrade to ArduCopter 3.1
+
 *** 3.0.1 R3
 Added ability to use Serial1 in UserCode.pde
 Added ability to disable internal compass in AP_IntertialSensor_MPU6000_I2C.cpp
